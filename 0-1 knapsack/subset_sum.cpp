@@ -22,7 +22,7 @@ bool subsetSum(vector<int>arr, int target){
     for(int i=1; i<=len; ++i){
         for(int j=1; j<=target; ++j){
             if(arr[i-1] > j ) dp[i][j] = dp[i-1][j];
-            else dp[i][j] = dp[i-1][arr[i-1]-j] // include 
+            else dp[i][j] = dp[i-1][j-arr[i-1]] // include 
                 || dp[i-1][j]; // don't include
         }
     }
