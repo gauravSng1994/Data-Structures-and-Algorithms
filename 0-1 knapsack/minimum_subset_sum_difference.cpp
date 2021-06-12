@@ -24,7 +24,7 @@ int minSubsetSumDiffernce(vector<int> arr){
             if(i==len && dp[i][j]) ans.push_back(j);
         }
     }
-    int min = INT_MAX;
+    // int min = INT_MAX;
     int ansInd = ans.size()%2 == 0 ? ans.size()/2 - 1 : ans.size()/2;
     return sum - 2 * ans[ansInd];
 }
