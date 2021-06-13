@@ -5,7 +5,7 @@ using namespace std;
 bool subsetSum(vector <int> arr, int target);
 
 int main(){
-    vector<int> arr = {2,3,7,8,10}; // given array
+    vector<int> arr = {2,3,7,8,10}; // given array 
     int target = 11; // target sum
     cout<<subsetSum(arr,target);
 }
